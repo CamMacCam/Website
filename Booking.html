@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penny's Place - Booking</title>
+    <link rel="icon" href="../CRainville_H10A02/images/logo.png">
+    <link rel="stylesheet" href="./Styles/site.css">
+</head>
+
+<body>
+
+    <div id="Banner">
+        <header>
+            <img class="logo" src="./images/Logo.png" alt="logo">
+            <div class="header">
+                <h1>Penny's Place</h1>
+                <h2>Dog Grooming</h2>
+            </div>
+        </header>
+
+        <nav id="topNav">
+            <ul>
+                <li class="HeadNav"> <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="HeadNav"><a href="./Grooming.html">Grooming</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="HeadNav"><a href="./Spa.html">Spa</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li class="HeadNav"><a href="./Booking.html">Booking</a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+
+
+        <section class="pageText">
+            <div class="textBox">
+                <img src="./images/goldenretreiver.png" alt="Golden Retreiver">
+                <h2>Book Your Next Grooming With Us!</h2>
+                <form name="book" id="book" method="get" action="Booking.html">
+                    <label for="petName">Pet Name:</label>
+                    <input type="text" id="petName" name="petName" size="30" maxlength="30" placeholder="Penny" />
+                    <label for="ownerName">Owner Name</label>
+                    <input type="text" id="ownerName" name="ownerName" size="30" maxlength="30"
+                        placeholder="Jack O'neill">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" size="50" maxlength="60"
+                        placeholder="tealc.indeed@email.com" />
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" size="16" maxlength="16" placeholder="(819) 111-3333" />
+                    <label for="datetime">Date and Time</label>
+                    <input type="datetime-local" id="datetime" name="datetime" />
+
+                    <label for="dogSize">Dog Size</label>
+                    <select id="dogSize" name="dogSize">
+                        <option value="Select One">Select one</option>
+                        <option value="small">Small 2-22 lbs</option>
+                        <option value="medium">Medium 23-57 lbs</option>
+                        <option value="large">Large 58-99 lbs</option>
+                        <option value="xl">X-Large 99+ lbs</option>
+                    </select>
+
+                    <label for="dogBreed">Dog Breed</label>
+                    <select id="dogBreed" name="dogBreed">
+                        <option value="Select One">Select one</option>
+                        <option value="labradorRetriever">Labrador Retriever</option>
+                        <option value="goldenRetriever">Golden Retriever</option>
+                        <option value="cockerSpaniel">Cocker Spaniel</option>
+                        <option value="get">German Shorthaired Pointer</option>
+                        <option value="englishSpringerSpaniel">English Springer Spaniel</option>
+                        <option value="beagle">Beagle</option>
+                        <option value="bassetHound">Basset Hound</option>
+                        <option value="dachshund">Dachshund</option>
+                        <option value="bloodhound">Bloodhound</option>
+                        <option value="greyhound">Greyhound</option>
+                        <option value="boxer">Boxer</option>
+                        <option value="rottweiler">Rottweiler</option>
+                        <option value="siberianHusky">Siberian Husky</option>
+                        <option value="dobermanPinscher">Doberman Pinscher</option>
+                        <option value="greatDane">Great Dane</option>
+                        <option value="bullTerrier">Bull Terrier</option>
+                        <option value="jackRussellTerrier">Jack Russell Terrier</option>
+                        <option value="scottishTerrier">Scottish Terrier</option>
+                        <option value="westHighlandWhiteTerrier">West Highland White Terrier</option>
+                        <option value="airedaleTerrier">Airedale Terrier</option>
+                        <option value="chihuahua">Chihuahua</option>
+                        <option value="pomeranian">Pomeranian</option>
+                        <option value="yorkshireTerrier">Yorkshire Terrier</option>
+                        <option value="maltese">Maltese</option>
+                        <option value="shihTzu">Shih Tzu</option>
+                        <option value="bulldog">Bulldog</option>
+                        <option value="dalmatian">Dalmatian</option>
+                        <option value="poodle">Poodle</option>
+                        <option value="bostonTerrier">Boston Terrier</option>
+                        <option value="bichonFrise">Bichon Frise</option>
+                        <option value="germanShepherd">German Shepherd</option>
+                        <option value="borderCollie">Border Collie</option>
+                        <option value="australianShepherd">Australian Shepherd</option>
+                        <option value="shetlandSheepdog">Shetland Sheepdog</option>
+                        <option value="corgi">Corgi (Pembroke and Cardigan)</option>
+                        <option value="dogoArgentino">Dogo Argentino</option>
+                        <option value="americanBully">American Bully</option>
+                        <option value="caneCorso">Cane Corso</option>
+                        <option value="belgianMalinois">Belgian Malinois</option>
+                        <option value="portugueseWaterDog">Portuguese Water Dog</option>
+                        <option value="labradoodle">Labradoodle (Labrador Retriever + Poodle)</option>
+                        <option value="goldendoodle">Goldendoodle (Golden Retriever + Poodle)</option>
+                        <option value="bernadoodle">Bernadoodle (Bernese Mountain Dog + Poodle)</option>
+                        <option value="puggle">Puggle (Pug + Beagle)</option>
+                        <option value="cockapoo">Cockapoo (Cocker Spaniel + Poodle)</option>
+                        <option value="schnoodle">Schnoodle (Schnauzer + Poodle)</option>
+                    </select>
+
+                    <label for="nailTrim">Nail Trim</label>
+                    <select id="nailTrim" name="nailTrim">
+                        <option value="Select One">Select one</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+
+                    </select>
+                    <fieldset>
+                        <legend>Coat Length</legend>
+                        <input type="radio" id="shortCoat" name="coatLength" value="shortCoat" />
+                        <label for="shortCoat">Short coat</label>
+
+                        <input type="radio" id="mediumCoat" name="coatLength" value="shortCoat" />
+                        <label for="mediumCoat">Medium Coat</label>
+
+                        <input type="radio" id="longCoat" name="coatLength" value="longCoat" />
+                        <label for="longCoat">Long Coat</label>
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Spa</legend>
+                        <input type="checkbox" id="essentialOils" name="spaOptionsOils" value="essentialOils" />
+                        <label for="essentialOils">Essential Oils</label>
+                        <select id="Oils" name="spaOptionsOils">
+                            <option value="Select One">Select one</option>
+                            <option value="yes">Cedarwood</option>
+                            <option value="no">Clary Sage</option>
+                            <option value="yes">Eucalyptus</option>
+                            <option value="no">Frankincense</option>
+                            <option value="yes">Geranium</option>
+                            <option value="no">Lavender</option>
+                            <option value="no">Mandarin & Orange</option>
+                            <option value="no">Palmarosa</option>
+                        </select>
+
+
+                        <input type="checkbox" id="music" name="spaOptionsMusic" value="music" />
+                        <label for="music">Music</label>
+                        <select id="Music" name="spaOptionsMusic">
+                            <option value="Select One">Select one</option>
+                            <option value="jazz">Jazz</option>
+                            <option value="spa">Spa</option>
+                            <option value="rock">Rock</option>
+                            <option value="softrock">Soft Rock</option>
+                            <option value="hiphop">Hip Hop</option>
+                            <option value="classical">Classical</option>
+                        </select>
+
+
+                        <input type="checkbox" id="warmBath" name="spaOptions" value="warmBath" />
+                        <label for="warmBath">Warm Bath</label>
+
+                        <input type="checkbox" id="massage" name="spaOptions" value="massage" />
+                        <label for="massage">Massage</label>
+                    </fieldset>
+                    </form>
+            </div>
+
+            <form>
+            <div id="actions">
+                <input type="submit" value="Book your Grooming Experience Now!" />
+                <input type="reset" value="Clear" />
+            </div>
+            </form>
+        </section>
+    </main>
+
+    <div id="footer">
+
+        <footer>
+            <nav id="bottomNav">
+                <a href="./index.html">Home</a>
+                <a href="./Grooming.html">Grooming</a>
+                <a href="./Spa.html">Spa</a>
+                <a href="./Booking.html">Booking</a>
+                <a href="./AboutUs.html">About Us</a>
+            </nav>
+
+            <p>
+                Penny's Place Logo by <a href="https://www.canva.com/"> Canva </a>
+            </p>
+
+            <p>
+                Golden Retreiver generated by<a href="https://www.istockphoto.com/"> istockphoto </a>
+            </p>
+
+            <small>Copyright &copy; 2024, Penny's Place.</small>
+        </footer>
+    </div>
+</body>
+
+</html>
